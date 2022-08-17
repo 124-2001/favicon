@@ -18,6 +18,9 @@
         align-items: center;
         background-color: rgba(50, 151, 198, 0.5);
       }
+      .list_content{
+        margin-top: 45px;
+      }
       .icon {
         margin-right: 20%;
       }
@@ -41,17 +44,18 @@
       .content_1 {
         width: 30%;
         height: 50%;
+        animation: float 4.5s linear infinite;
       }
       .image {
         width: 100%;
-        height: 180px;
+        height: 250px;
         border-radius: 10px;
         box-shadow: -1px 8px 20px 1px #aaa;
       }
 
       .content_1:hover .title {
         transform: translateY(-25px);
-        transition: 1s ease-in-out;
+        transition: 0.5s ease-in-out;
         opacity: 1;
       }
       #header {
@@ -64,6 +68,8 @@
       }
       .title{
         opacity: 0;
+        width: 100%;
+        text-align: center;
       }
       footer {
         text-align: center;
@@ -75,9 +81,49 @@
         bottom: 0;
         width: 100%;
       }
-      #link{
-        padding-left: 40%;
+
+      @keyframes float {
+        0% {
+          transform: translateY(0);
+        }
+        10% {
+          transform: translateY(10px);
+        }
+        20% {
+          transform: translateY(15px);
+        }
+        30% {
+          transform: translateY(20px);
+        }
+        40% {
+          transform: translateY(-5px);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+        60% {
+          transform: translateY(-15px);
+        }
+        70% {
+          transform: translateY(-20px);
+        }
+        80% {
+          transform: translateY(-25px);
+        }
+        90% {
+          transform: translateY(5px);
+        }
+        100% {
+          transform: translateY(10px);
+        }
       }
+
+      .hello{
+        text-align: center;
+        font-family: monospace;
+        color: rgb(152, 13, 245);
+      }
+      
 
      
     </style>
@@ -95,6 +141,11 @@
         </ul>
       </div>
     </div>
+
+    <div class="hello">
+      <h1>List Động Vật</h1>
+    </div>
+
     <div class="list_content">
       <div class="list_content_1">
         <div class="content_1">
